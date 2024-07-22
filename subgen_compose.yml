@@ -38,6 +38,7 @@ services:
        - "${APPDATA}/subgen/models:/subgen/models"
     ports:
        - "9000:9000"
+    network_mode: "br0"
     deploy:
       resources:
         reservations:
