@@ -1,4 +1,3 @@
-version: '2'
 services:
   subgen:
     container_name: subgen
@@ -24,6 +23,7 @@ services:
        - "PATH_MAPPING_FROM=/tv"
        - "PATH_MAPPING_TO=/Volumes/TV"
        - "TRANSCRIBE_DEVICE=cuda"
+       - "TRANSCRIBE_OR_TRANSLATE=translate"
        - "CLEAR_VRAM_ON_COMPLETE=True"
        - "MODEL_PATH=./models"
        - "UPDATE=True"
